@@ -1,0 +1,560 @@
+*
+  padding: 0
+  margin: 0
+  border: 0
+
+*,
+*:before,
+*:after
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+:focus,
+:active
+  outline: none
+
+a:focus,
+a:active
+  outline: none
+
+nav,
+footer,
+header,
+aside
+  display: block
+
+html,
+body
+  height: 100%
+  width: 100%
+  font-size: 100%
+  line-height: 1
+  font-size: 14px
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+  -ms-text-size-adjust: 100%
+  -moz-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+
+input,
+button,
+textarea
+  font-family: inherit
+
+input::-ms-clear
+  display: none
+
+button
+  cursor: pointer
+
+button::-moz-focus-inner
+  padding: 0
+  border: 0
+
+a,
+a:visited
+  text-decoration: none
+
+a:hover
+  text-decoration: none
+
+ul li
+  list-style: none
+
+img
+  vertical-align: top
+  height: 100px
+  width: 100px
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-size: inherit
+  font-weight: 700
+
+.wrapper
+  max-width: 100%
+
+  margin: 0 0
+
+.main
+  background: url(https://a0.muscache.com/pictures/cf9f7fb3-2f0a-4730-a08a-e079161b9be3.jpg) center/ cover no-repeat
+  display: flex
+  width: 100%
+  margin: 0 auto 48px auto
+  padding: 0 80px
+  height: 55vh
+  &__content
+    color: white
+    position: relative
+    top: 17%
+    left: 7%
+  &__subhead
+
+    font-size: 18px
+    display: block
+    text-transform: uppercase
+    padding-bottom: 20px
+    font-weight: 700
+  &__head
+    font-size: 60px
+    display: block
+    padding-bottom: 20px
+    max-width: 600px
+  &__text
+    font-size: 20px
+    line-height: 30px
+    max-width: 600px
+    padding-bottom: 20px
+  &__button button
+    border: none
+    border-radius: 8px
+    color: white
+    padding: 15px 32px
+    text-align: center
+    text-decoration: none
+    display: inline-block
+    font-size: 16px
+    background: #ff385c
+    transition: transform 0.5s
+  &__button button:hover
+    transform: scale(0.95)
+.main::before
+  content: ""
+  position: absolute
+  top: 0
+  left: 0
+  width: 80%
+  height: 55vh
+  background: linear-gradient(300deg, rgba(10, 0,95,0)40%,#000000 100%)
+
+.next
+  position: relative
+  margin: 90px auto 48px auto
+  &__content
+    display: flex
+
+  &__first
+    margin-left: 200px
+    display: block
+    font-size: 48px
+    line-height: 48px
+    max-width: 500px
+  &__title
+
+  &__items
+    display: flex
+    justify-content: space-around
+  &__items:first-child
+    margin-left: 200px
+
+.item
+  width: 350px
+  margin-right: 40px
+  padding: 0 20px
+  h2
+    font-size: 24px
+    line-height: 30px
+  p
+    margin-top: 20px
+    font-size: 16px
+    line-height: 25px
+
+.feedback
+  position: relative
+  margin: 90px 180px
+  &__content
+    display: flex
+  &__img
+    width: 50%
+    img
+      width: 100%
+      height: 100%
+      border-radius: 18px
+  &__text
+    font-size: 24px
+    line-height: 28px
+    width: 50%
+    align-self: center
+    padding: 0 70px
+    p
+      font-size: 16px
+      line-height: 20px
+      margin: 20px 0
+    button
+      text-decoration: underline
+      font-size: 16px
+
+.start
+  position: relative
+  margin: 90px auto
+  &__content
+    position: relative
+    margin: 0 180px
+    height: 480px
+    background: url(https://a0.muscache.com/pictures/926c4a0e-0934-480b-bf57-cf770ef2e9cd.jpg) center/cover no-repeat
+    border-radius: 20px
+    color: white
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 80%
+      height: 100%
+      background: linear-gradient(300deg, rgba(10, 0,95,0)40%,#000000 100%)
+      border-radius: 20px
+  &__head
+
+    position: relative
+    top: 70px
+    left: 60px
+    margin: 30px
+    font-size: 18px
+    text-transform: uppercase
+    letter-spacing: 2px
+  &__text
+    position: relative
+    max-width: 35%
+    top: 100px
+    left: 60px
+    margin: 30px
+    font-size: 42px
+  &__button
+    position: relative
+    top: 150px
+    left: 60px
+    margin: 30px
+    button
+      border: none
+      border-radius: 8px
+      color: white
+      padding: 15px 32px
+      text-align: center
+      text-decoration: none
+      display: inline-block
+      font-size: 16px
+      background: #ff385c
+      transition: transform 0.5s
+      &:hover
+        transform: scale(0.95)
+
+.works
+  position: relative
+  margin: 90px 155px
+  &__content
+
+  &__items
+    display: flex
+  &__item
+    max-width: 33%
+    margin: 0 20px
+  &__img img
+    width: 90%
+    height: 220px
+    border-radius: 20px
+  &__description
+    font-size: 18px
+    line-height: 24px
+    h2
+      margin: 20px 0
+
+  &__text
+
+    font-size: 14px
+    line-height: 18px
+.work
+
+.ask
+  position: relative
+  margin: 90px 170px
+  &__content
+    display: flex
+
+  &__text
+    align-self: center
+    margin-right: 30px
+    width: 50%
+  &__subhead
+    text-transform: uppercase
+    font-size: 18px
+    line-height: 21px
+    margin: 20px 0
+  &__paragraph
+    font-size: 42px
+    line-height: 44px
+    font-weight: bold
+  button
+    margin: 20px 0
+    color: white
+    font-size: 14px
+    background: black
+    line-height: 10px
+    border-radius: 8px
+    padding: 20px
+    transition: transform 0.5s
+    &:hover
+      transform: scale(0.95)
+  &__img
+    width: 50%
+    img
+      object-fit: cover
+      width: 100%
+      height: 100%
+      border-radius: 10px
+
+.support
+  position: relative
+  margin: 90px 170px
+
+  &__content
+
+  &__row
+
+  &__items
+    display: flex
+  &__item
+    width: 33%
+    margin-right: 50px
+    &:last-child
+      margin-right: 0
+  &__subhead
+    font-size: 24px
+    line-height: 30px
+    margin-bottom: 30px
+  &__text
+    font-size: 16px
+    line-height: 25px
+    margin-bottom: 30px
+  &__link
+    text-decoration: underline
+    font-size: 16px
+    :visited
+      color: black
+
+  .supp
+
+.end
+  position: relative
+  margin: 90px auto
+  &__content
+
+  &__hero
+    position: relative
+    padding: 180px 170px
+    background: url(https://a0.muscache.com/im/pictures/9d2dc3e5-fc2d-420d-a524-133be70529a3.jpg?im_q=highq&im_w=1680) center/cover no-repeat
+  &__head
+    max-width: 400px
+    color: white
+    margin: 20px 0
+  h2
+    font-size: 42px
+    line-height: 44px
+
+  &__text
+    margin: 20px 0
+    color: white
+    font-size: 18px
+    line-height: 30px
+
+  &__btn
+    position: relative
+    button
+      border: none
+      border-radius: 8px
+      color: white
+      padding: 15px 32px
+      text-align: center
+      text-decoration: none
+      display: inline-block
+      font-size: 16px
+      background: #ff385c
+      transition: transform 0.5s
+      &:hover
+        transform: scale(0.95)
+
+  &__connect
+    margin: 70px 170px
+    display: flex
+
+.connect
+
+  &__text
+    max-width: 500px
+    margin-right: 200px
+  &__head
+    font-size: 46px
+    line-height: 48px
+    margin-bottom: 30px
+  &__item
+    font-size: 16px
+    line-height: 24px
+  &__form
+    max-width: 400px
+  &__email
+
+    height: 15%
+    border: 1px solid black
+    border-top-left-radius: 10px
+    border-top-right-radius: 10px
+
+    input
+      position: relative
+      top: 35%
+      left: 5%
+      background: none
+
+  &__password
+    height: 15%
+    border: 1px solid black
+    border-top: none
+    border-bottom-left-radius: 10px
+    border-bottom-right-radius: 10px
+    input
+      position: relative
+      top: 35%
+      left: 5%
+      background: none
+  &__checkbox
+    font-size: 12px
+    line-height: 20px
+    padding: 10px 0
+    display: flex
+    input
+      width: 30px
+    label
+      margin-left: 10px
+  &__btn
+
+    button
+      font-size: 14px
+      font-weight: bold
+      padding: 20px 40px
+      border-radius: 10px
+      color: white
+      background: black
+.form
+
+  &__text
+    margin-top: 20px
+    color: #717171
+    font-size: 12px
+    line-height: 20px
+    a
+      font-weight: bold
+      text-decoration: underline
+      &:visited
+        color: black
+.footer
+  &::before
+    display: flex
+    content: ""
+  &__wrapper
+    margin: 40px 170px
+  &__content
+    display: flex
+  &__support
+    width: 25%
+    li
+      margin-bottom: 20px
+      &:last-child
+        margin-bottom: 0
+    a:visited
+      color: black
+  &__support-head
+    font-size: 14px
+    line-height: 18px
+    padding-bottom: 20px
+  &__community
+    width: 25%
+    li
+      margin-bottom: 20px
+      &:last-child
+        margin-bottom: 0
+    a:visited
+      color: black
+  &__community-head
+    font-size: 14px
+    line-height: 18px
+    padding-bottom: 20px
+  &__hosting
+    width: 25%
+    li
+      margin-bottom: 20px
+      &:last-child
+        margin-bottom: 0
+    a:visited
+      color: black
+  &__hosting-head
+    font-size: 14px
+    line-height: 18px
+    padding-bottom: 20px
+  &__about
+    width: 25%
+    li
+      margin-bottom: 20px
+      &:last-child
+        margin-bottom: 0
+    a:visited
+      color: black
+  &__about-head
+    font-size: 14px
+    line-height: 18px
+    padding-bottom: 20px
+  &__credits
+
+    margin: 80px 0 0 0
+.credits
+
+.content
+  display: flex
+  justify-content: space-between
+  padding-bottom: 15px
+  &__left
+    display: flex
+  &__date
+    margin-right: 5px
+  &__link
+    span
+      margin-right: 5px
+    a
+      margin-right: 5px
+    a:visited
+      color: black
+  &__right
+
+    display: flex
+
+  &__location
+    display: flex
+    button
+      background: none
+      margin: 0 10px
+      display: flex
+      &:hover
+        text-decoration: underline
+        color: #484848
+    span
+      padding: 3px
+  &__socials
+    ul
+      list-style-type: none
+      margin: 0
+      padding: 0
+    li
+      float: left
+      margin: 0 10px
+      &:last-child
+        margin-left: 10px
+
+      a
+        text-decoration: none
+        color: black
+
+.location
+
+  &__language
+
+    &__currency
