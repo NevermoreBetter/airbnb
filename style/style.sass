@@ -77,38 +77,50 @@ h6
 .wrapper
   max-width: 100%
 
-  margin: 0 0
-
 .main
   background: url(https://a0.muscache.com/pictures/cf9f7fb3-2f0a-4730-a08a-e079161b9be3.jpg) center/ cover no-repeat
   display: flex
-  width: 100%
-  margin: 0 auto 48px auto
-  padding: 0 80px
+  max-width: 100%
+  margin: 0 0 48px 0
   height: 55vh
+
   &__content
+    position: relative
+    left: 130px
+    height: 100%
     color: white
+    min-width: 1030px
+  &__subhead
     position: relative
     top: 17%
     left: 7%
-  &__subhead
-
     font-size: 18px
     display: block
     text-transform: uppercase
     padding-bottom: 20px
     font-weight: 700
   &__head
+    position: relative
+    top: 17%
+    left: 7%
     font-size: 60px
     display: block
     padding-bottom: 20px
     max-width: 600px
   &__text
+    position: relative
+    top: 17%
+    left: 7%
     font-size: 20px
     line-height: 30px
-    max-width: 600px
+    max-width: 35%
     padding-bottom: 20px
+  &__button
+    position: relative
+    top: 17%
+    left: 7%
   &__button button
+
     border: none
     border-radius: 8px
     color: white
@@ -135,7 +147,7 @@ h6
   margin: 90px auto 48px auto
   &__content
     display: flex
-
+    flex: 0 1 33%
   &__first
     margin-left: 200px
     display: block
@@ -143,7 +155,7 @@ h6
     line-height: 48px
     max-width: 500px
   &__title
-
+    min-width: 416px
   &__items
     display: flex
     justify-content: space-around
@@ -151,7 +163,7 @@ h6
     margin-left: 200px
 
 .item
-  width: 350px
+  max-width: 350px
   margin-right: 40px
   padding: 0 20px
   h2
@@ -170,8 +182,8 @@ h6
   &__img
     width: 50%
     img
-      width: 100%
-      height: 100%
+      min-height: 280px
+      min-width: 440px
       border-radius: 18px
   &__text
     font-size: 24px
@@ -193,10 +205,12 @@ h6
   &__content
     position: relative
     margin: 0 180px
+    min-width: 830px
     height: 480px
     background: url(https://a0.muscache.com/pictures/926c4a0e-0934-480b-bf57-cf770ef2e9cd.jpg) center/cover no-repeat
     border-radius: 20px
     color: white
+    overflow: hidden
     &::before
       content: ""
       position: absolute
@@ -252,6 +266,7 @@ h6
     max-width: 33%
     margin: 0 20px
   &__img img
+    min-width: 280px
     width: 90%
     height: 220px
     border-radius: 20px
@@ -300,6 +315,7 @@ h6
   &__img
     width: 50%
     img
+      min-width: 393px
       object-fit: cover
       width: 100%
       height: 100%
@@ -558,3 +574,12 @@ h6
   &__language
 
     &__currency
+
+@media ( max-width: 1200px )
+  .__sections
+    margin-left: 0
+    margin-right: 0
+  .-content
+    border-radius: 0
+    margin-left: 0
+    margin-right: 0
